@@ -1426,6 +1426,7 @@ blockquote i {
     background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px);
     transition: .9s cubic-bezier(.32, .32, .15, 1.17);
     background-size: 0 100%;
+    text-transform: none;
 }
 
 .service-item .service-title h4 a:hover {

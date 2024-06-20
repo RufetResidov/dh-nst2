@@ -16,8 +16,7 @@
   8. Extra
   9. Responsive Css
 ------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -31,8 +30,8 @@
     --themeht-bg-light-color: #F9F9F9;
     --themeht-border-light-color: #CFCFCF;
     --themeht-border-dark-color: #1C1C1C;
-    --themeht-typography-body-font-family: 'DM Sans', sans-serif;
-    --themeht-typography-secondary-font-family: 'Wix Madefor Display', sans-serif;
+    --themeht-typography-body-font-family: 'Montserrat', sans-serif;
+    --themeht-typography-secondary-font-family: 'Montserrat', sans-serif;
 
 }
 
