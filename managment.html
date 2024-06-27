@@ -157,10 +157,14 @@
                           <a class="nav-link" href="/">ANA SƏHİFƏ</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Haqqımızda</a>
+                          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">ŞİRKƏTİMİZ</a>
                           <ul class="dropdown-menu">
-                            <li><a href="about.html">DH-NST HAQQINDA</a></li>
+                            <li><a href="about.html">HAQQIMIZDA</a></li>
                             <li><a href="managment.html">İdarəçi Rəhbər</a></li>
+                            <li><a href="#">Missiyamız və Dəyərlərimiz</a></li>
+                            <li><a href="#">Korporativ məsuliyyət</a></li>
+                            <li><a href="#"> Quality, HSE, Safety</a></li>
+                            <li><a href="#"> Ethics and Compliance</a></li>
                           </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -172,24 +176,31 @@
                             <li><a href="construction.html">TİKİNTİ İŞLƏRİ</a></li>
                           </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Our People</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#.html">Working in DH Neft Tikinti</a></li>
+                          </ul>
+                        </li>
                         <li class="nav-item">
                           <a class="nav-link" href="careers.html">Karyera</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="media.html">Media</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="contact.html">Əlaqə</a>
                         </li>
                       </ul>
                     </div>
-                    <a class="themeht-btn dark-btn" href="contact.html">
-                      <span>Sualınız var ?</span>
-                      <svg class="ht-svg-arrow" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19"
-                        viewBox="0 0 19 19" xml:space="preserve">
-                        <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
-                        <line x1="1.2" y1="1" x2="18" y2="1"></line>
-                        <line x1="18" y1="17.8" x2="18" y2="1"></line>
-                      </svg>
-                    </a>
+                    <div class="select-with-icon d-flex align-items-center p-4 border-light">
+                      <i class="fas fa-globe "></i>
+                      <select class="form-select" onchange="navigateToPage(this)">
+                        <option selected>Az</option>
+                        <option value="eng.html">Eng</option>
+                        <option value="tur.html">Tur</option>
+                      </select>
+                    </div>
                   </nav>
                 </div>
               </div>
@@ -228,43 +239,61 @@
     </section>
 
     <!--page title end-->
-
-
-    <!--body content start-->
-
-    <div class="page-content">
-
-      <!--team details start-->
-
-      <section>
-        <div class="container">
-          <div class="row my-5 justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-12 ">
-              <div class="team-single">
-                <div class="team-images">
-                  <img class="img-fluid w-100" src="images/managment.jpg" alt="">
+    <section>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-12 col-lg-8 mb-6 mb-lg-0 order-lg-1">
+            <div class="row my-5 justify-content-center align-items-center">
+              <div class="col-lg-4 col-md-12 ">
+                <div class="team-single">
+                  <div class="team-images">
+                    <img class="img-fluid w-100" src="images/managment.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 mt-6 mt-lg-0 ps-lg-8">
+                <div class="team-description">
+                  <h3>Ad Soyadı </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui facilis ullam repudiandae
+                    nobis. Quae, alias ad perferendis ipsum iste nisi natus totam ullam tenetur illum illo harum ea
+                    temporibus!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex officia numquam facere mollitia,
+                    veniam perferendis consectetur. Animi voluptatibus repellendus doloribus porro rem consequuntur,
+                    minus
+                    dolorem ratione esse cupiditate optio?</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-12 mt-6 mt-lg-0 ps-lg-8">
-              <div class="team-description">
-                <h3>İdarəçi rəhbərin Ad Soyadı </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui facilis ullam repudiandae
-                  nobis. Quae, alias ad perferendis ipsum iste nisi natus totam ullam tenetur illum illo harum ea
-                  temporibus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex officia numquam facere mollitia,
-                  veniam perferendis consectetur. Animi voluptatibus repellendus doloribus porro rem consequuntur, minus
-                  dolorem ratione esse cupiditate optio?</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="service-page-sidebar">
+              <div class="service-widget">
+                <ul class="service-menu list-unstyled mb-0">
+                  <li >
+                    <a href="about.html">Haqqımızda</a>
+                  </li>
+                  <li class="active">
+                    <a href="managment.html">İdarəçi Rəhbər</a>
+                  </li>
+                  <li>
+                    <a href="vision.html">Missiyamız və Vizyonumuz</a>
+                  </li>
+                  <li>
+                    <a href="quality.html">Keyfiyyət, HSE, Təhlükəsizlik</a>
+                  </li>
+                  <li>
+                    <a href="corporate.html">Korporativ məsuliyyət</a>
+                  </li>
+                  <li>
+                    <a href="ethics.html">Etika və uyğunluq</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!--team details end-->
-    </div>
-
-    <!--body content end-->
+      </div>
+    </section>
 
     <!--footer start-->
 
@@ -371,7 +400,14 @@
 
 
   <!-- inject js start -->
-
+  <script>
+    function navigateToPage(selectElement) {
+      const selectedValue = selectElement.value;
+      if (selectedValue) {
+        window.location.href = selectedValue;
+      }
+    }
+  </script>
   <!--== jquery -->
   <script src="js/jquery.min.js"></script>
 

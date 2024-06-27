@@ -2807,8 +2807,8 @@ blockquote i {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-height: 100vh;
-    padding: 6rem 4rem;
+    min-height: 70vh;
+    padding: 4rem;
     box-sizing: border-box;
 }
 
