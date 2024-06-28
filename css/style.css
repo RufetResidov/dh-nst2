@@ -1404,16 +1404,40 @@ p {
         font-size: 26px;
     }
 }
-  .select-with-icon {
-      position: relative;
+
+.select-with-icon {
+    position: relative;
+}
+
+.select-with-icon select {
+    padding-right: 3.5rem;
+    /* Space for the icon */
+}
+
+.select-with-icon .fa-globe {
+    position: absolute;
+    top: 50%;
+    right: 3.75rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* So the icon doesn't block clicks on the select */
+}
+
+.desktop-lang {
+    display: none;
+}
+
+/* Display the select element on tablets and larger devices */
+@media (min-width: 768px) {
+    .desktop-lang {
+        display: flex;
     }
-    .select-with-icon select {
-      padding-right: 3.5rem; /* Space for the icon */
+
+    .mobile-lang {
+        display: none;
     }
-    .select-with-icon .fa-globe {
-      position: absolute;
-      top: 50%;
-      right: 3.75rem;
-      transform: translateY(-50%);
-      pointer-events: none; /* So the icon doesn't block clicks on the select */
-    }
+}
+
+.mobile-lang {
+    display: flex;
+}
