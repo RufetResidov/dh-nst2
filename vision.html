@@ -150,7 +150,7 @@
                         </path>
                       </svg>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div style="padding: 1rem;" class="collapse navbar-collapse" id="navbarNav">
                       <!-- Left nav -->
                       <ul class="nav navbar-nav me-auto">
                         <li class="nav-item">
@@ -179,7 +179,7 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Our People</a>
                           <ul class="dropdown-menu">
-                            <li><a href="#.html">Working in DH Neft Tikinti</a></li>
+                            <li><a href="#">Working in DH Neft Tikinti</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
@@ -192,8 +192,16 @@
                           <a class="nav-link" href="contact.html">Əlaqə</a>
                         </li>
                       </ul>
+                      <div class="select-with-icon align-items-center border-light mobile-lang">
+                        <i class="fas fa-globe ms-3"></i>
+                        <select class="form-select" onchange="navigateToPage(this)">
+                          <option selected>Az</option>
+                          <option value="eng.html">Eng</option>
+                          <option value="tur.html">Tur</option>
+                        </select>
+                      </div>
                     </div>
-                    <div class="select-with-icon d-flex align-items-center p-4 border-light">
+                    <div class="select-with-icon  align-items-center p-4 border-light desktop-lang">
                       <i class="fas fa-globe "></i>
                       <select class="form-select" onchange="navigateToPage(this)">
                         <option selected>Az</option>

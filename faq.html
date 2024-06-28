@@ -52,6 +52,8 @@
   <!--== default-theme -->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 
   <!-- inject css end -->
@@ -193,20 +195,23 @@
                           <a class="nav-link" href="contact.html">Əlaqə</a>
                         </li>
                       </ul>
+                      <div class="select-with-icon align-items-center border-light mobile-lang">
+                        <i class="fas fa-globe "></i>
+                        <select class="form-select" onchange="navigateToPage(this)">
+                          <option selected>Az</option>
+                          <option value="eng.html">Eng</option>
+                          <option value="tur.html">Tur</option>
+                        </select>
+                      </div>
                     </div>
-                    <a class="themeht-btn dark-btn d-flex justify-content-between" href="contact.html">
-                      <span style="text-transform: none;">Türk dili</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-globe">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path
-                          d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                        </path>
-                      </svg>
-
-                    </a>
+                    <div class="select-with-icon  align-items-center p-4 border-light desktop-lang">
+                      <i class="fas fa-globe "></i>
+                      <select class="form-select" onchange="navigateToPage(this)">
+                        <option selected>Az</option>
+                        <option value="eng.html">Eng</option>
+                        <option value="tur.html">Tur</option>
+                      </select>
+                    </div>
                   </nav>
                 </div>
               </div>
@@ -215,32 +220,6 @@
         </div>
       </div>
     </header>
-
-
-    <!--header end-->
-    <div class="search-input" id="search-input-box">
-      <div class="search-inner-box">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <form role="search" id="search-form" class="search-form d-flex justify-content-between search-inner">
-                <label>
-                  <input type="search" class="search-field form-control" placeholder="Search Here" value="" name="s" />
-                </label>
-                <button type="submit" class="search-submit">
-                  <i class="bi bi-search"></i>
-                </button>
-                <span class="bi bi-x close-search" id="close-search" title="Close Search"></span>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--header end-->
-
-
     <!--page title start-->
 
     <section class="page-title">
@@ -264,8 +243,7 @@
 
     <!--page title end-->
 
-
-    <!--body content start-->
+    <!--header end-->
 
     <div class="page-content">
 
@@ -397,102 +375,113 @@
       <!--faq end-->
 
     </div>
+  </div>
 
-    <!--body content end-->
+  <!--body content end-->
 
 
-    <!--footer start-->
+  <!--footer start-->
 
-    <footer class="footer">
-      <div class="primary-footer">
-        <div class="container">
-          <div class="row gx-0 primary-footer-btm">
-            <div class="col-lg-4 mt-5 mt-lg-0">
-              <a class="footer-logo d-inline-block logo mb-4" href="index.html">
-                <img class="img-fluid" src="images/white.svg" alt="Logo Img">
-              </a>
-              <p>“DH Neft Servis Tikinti” QSC istehsalatın müxtəlif sahələrini özündə
-                cəmləşdirən müasir, dinamik inkişaf edən bir şirkətdir.</p>
-              <ul class="list-inline ps-0 ms-0 social-icons footer-social">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="flaticon-facebook-app-symbol"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="flaticon-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="flaticon-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="flaticon-linkedin"></i>
-                  </a>
-                </li>
+  <footer class="footer">
+    <div class="primary-footer">
+      <div class="container">
+        <div class="row gx-0 primary-footer-btm">
+          <div class="col-lg-3 mt-5 mt-lg-0">
+            <a class="footer-logo d-inline-block logo mb-4" href="index.html">
+              <img class="img-fluid" src="images/white.svg" alt="Logo Img">
+            </a>
+            <p>“DH Neft Servis Tikinti” QSC istehsalatın müxtəlif sahələrini özündə
+              cəmləşdirən müasir, dinamik inkişaf edən bir şirkətdir.</p>
+            <ul class="list-inline ps-0 ms-0 social-icons footer-social">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="flaticon-facebook-app-symbol"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="flaticon-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="flaticon-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="flaticon-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-menu1">
+              <h5>Şirkət</h5>
+              <ul class="footer-menu list-unstyled">
+                <li style="width: 100%;"><a href="about.html">Haqqımızda</a></li>
+                <li style="width: 100%;"><a href="managment.html">İdarəçi Rəhbər</a></li>
+                <li style="width: 100%;"><a href="vision.html">Missiya və Dəyərlər</a></li>
+                <li style="width: 100%;"><a href="corporate.html">Korporativ məsuliyyət</a></li>
+                <li style="width: 100%;"><a href="quality.html"> Quality, HSE, Safety</a></li>
+                <li style="width: 100%;"><a href="ethics.html"> Ethics and Compliance</a></li>
               </ul>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="footer-menu1">
-                <h5>Keçidlər</h5>
-                <ul class="footer-menu list-unstyled">
-                  <li><a href="#">Ana səhifə</a></li>
-                  <li><a href="#">Haqqımızda</a></li>
-                  <li><a href="#">Servislər</a></li>
-                  <li><a href="projects.html">Layihələr</a></li>
-                  <li><a href="#">İdarəçi rəhbər</a></li>
-                  <li><a href="#">Tikinti işləri</a></li>
-                  <li><a href="#">Karyera</a></li>
-                  <li><a href="#">Əlaqə</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-menu1">
+              <h5>Keçidlər</h5>
+              <ul class="footer-menu list-unstyled">
+                <li style="width: 100%;"><a href="services.html">Servislər</a></li>
+                <li style="width: 100%;"><a href="projects.html">Layihələr</a></li>
+                <li style="width: 100%;"><a href="careers.html">Karyera</a></li>
+                <li style="width: 100%;"><a href="media.html">Media</a></li>
+                <li style="width: 100%;"><a href="contact.html">Contact</a></li>
+                <li style="width: 100%;"><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Əlaqə məlumatları</h5>
+            <div class="textwidget custom-html-widget">
+              <div class="footer-cntct">
+                <ul class="media-icon list-unstyled">
+                  <li>
+                    <i class="flaticon-location"></i>
+                    <p class="mb-0">Bakı Şəhəri Sabit Rəhman küçəsi</p>
+                  </li>
+                  <li>
+                    <i class="flaticon-open"></i>
+                    <a href="mailto:dh-nst@gmail.com">dh-nst@gmail.com</a>
+                  </li>
+                  <li>
+                    <i class="flaticon-customer-service"></i>
+                    <a href="tel:9945555555">+994 55 555 55 55</a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <h5>Əlaqə məlumatları</h5>
-              <div class="textwidget custom-html-widget">
-                <div class="footer-cntct">
-                  <ul class="media-icon list-unstyled">
-                    <li>
-                      <i class="flaticon-location"></i>
-                      <p class="mb-0">Bakı Şəhəri Sabit Rəhman küçəsi</p>
-                    </li>
-                    <li>
-                      <i class="flaticon-open"></i>
-                      <a href="mailto:dh-nst@gmail.com">dh-nst@gmail.com</a>
-                    </li>
-                    <li>
-                      <i class="flaticon-customer-service"></i>
-                      <a href="tel:9945555555">+994 55 555 55 55</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="secondary-footer">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col">
-              <div class="copyright">Copyright © 2024 All Rights Reserved | In4Tech MMC</div>
-            </div>
+    </div>
+    <div class="secondary-footer">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col">
+            <div class="copyright">Copyright © 2024 All Rights Reserved | In4Tech MMC</div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--footer end-->
+  <!--footer end-->
 
 
   </div>
 
+  <!-- page wrapper end -->
 
   <!--back-to-top start-->
 
@@ -553,8 +542,8 @@
   <!--== swiper-bundle -->
   <script src='js/swiper-bundle.min.js'></script>
 
-  <!--== reincon-swiper-init -->
-  <script src='js/reincon-swiper-init.js'></script>
+  <!--==swiper-init -->
+  <script src='js/swiper-init.js'></script>
 
   <!--== color-customize -->
   <script src="js/color-customize/color-customizer.js"></script>
@@ -565,8 +554,5 @@
   <!-- inject js end -->
 
 </body>
-
-
-<!-- Mirrored from themeht.com/template/reincon/ltr/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Jun 2024 11:27:57 GMT -->
 
 </html>

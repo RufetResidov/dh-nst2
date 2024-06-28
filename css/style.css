@@ -1410,24 +1410,21 @@ p {
 }
 
 .select-with-icon select {
-    padding-right: 3.5rem;
+    padding-right: 4.4rem;
     /* Space for the icon */
 }
 
 .select-with-icon .fa-globe {
     position: absolute;
     top: 50%;
-    right: 3.75rem;
+    right:50px;
     transform: translateY(-50%);
     pointer-events: none;
-    /* So the icon doesn't block clicks on the select */
 }
 
 .desktop-lang {
-    display: none;
+    display: none !important;
 }
-
-/* Display the select element on tablets and larger devices */
 @media (min-width: 768px) {
     .desktop-lang {
         display: flex;
@@ -1439,5 +1436,5 @@ p {
 }
 
 .mobile-lang {
-    display: flex;
+    display: flex !important;
 }
