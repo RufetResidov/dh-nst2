@@ -314,14 +314,25 @@ body.tt-magic-cursor #magic-cursor {
 /* ------------------------
     Banner Slider
 ------------------------*/
-[data-bg-img] {
+/* [data-bg-img] {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
+} */
 
 .banner-slider {
     background-color: var(--themeht-bg-dark-color);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Yarı saydam siyah katman */
+    z-index: 0;
 }
 
 .banner-slider .slider-img {
@@ -331,8 +342,8 @@ body.tt-magic-cursor #magic-cursor {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
     left: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
@@ -344,7 +355,7 @@ body.tt-magic-cursor #magic-cursor {
 .slider-img::before {
     position: absolute;
     content: '';
-    background-color: #000000;
+    background: rgba(0, 0, 0, 1);
     width: 100%;
     height: 100%;
     top: 0;
@@ -1417,24 +1428,52 @@ p {
 .select-with-icon .fa-globe {
     position: absolute;
     top: 50%;
-    right:50px;
+    right: 50px;
     transform: translateY(-50%);
     pointer-events: none;
 }
 
-.desktop-lang {
-    display: none !important;
+.mobile-lang {
+    display: none;
 }
-@media (min-width: 768px) {
-    .desktop-lang {
+
+@media (max-width: 768px) {
+    .contact-img {
+        display: none !important;
+    }
+    .concact-form-section{
+        padding: 3rem 0 !important;
+    }
+    .mobile-lang {
         display: flex;
     }
 
-    .mobile-lang {
-        display: none;
+    .desktop-lang {
+        display: none !important;
     }
 }
 
-.mobile-lang {
-    display: flex !important;
+.desktop-lang {
+    display: flex;
+    margin-right: 20px;
+    background-color: #252525 !important;
+
+}
+
+.desktop-lang .dropdown-menu .show {
+    width: 100px;
+}
+
+.desktop-lang .btn span, i {
+    color: #fff;
+}
+
+.desktop-lang .dropdown-menu .dropdown-item:hover {
+    background-color: #252525;
+    color: white;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border: none;
+    border-radius: 0;
 }
