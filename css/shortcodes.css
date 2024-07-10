@@ -480,11 +480,15 @@
     position: relative;
     overflow: hidden;
 }
+.team-images img{
+    height: 400px;
+    object-fit: fill;
+}
 
 .team-member .team-desc {
     padding: 20px;
     border-left: 1px solid var(--themeht-border-light-color);
-    border-right: 1px solid var(--themeht-border-light-color);
+    /* border-right: 1px solid var(--themeht-border-light-color); */
 }
 
 .team-member .team-desc h4 {

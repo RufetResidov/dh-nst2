@@ -319,7 +319,7 @@ input,
     position: relative;
     z-index: 999;
     /* box-shadow: 0 25px 70px rgba(0, 0, 0, 0.07); */
-    border-left: 1px solid #fafafa;
+    /* border-left: 1px solid #fafafa; */
     /* padding-left: 30px; */
 }
 
@@ -364,12 +364,12 @@ input,
     Header
 ------------------------*/
 .logo {
-    margin-right: 70px;
+    margin-right:32px;
     flex-shrink: 0;
 }
 
 .logo img {
-    height: 90px;
+    height: 104px;
 }
 
 .navbar {
