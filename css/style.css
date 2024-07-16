@@ -1533,3 +1533,6 @@ p {
 @media (max-width:1240px) {
     
 }
+.service-icon i{
+    color: #05152d;
+}
