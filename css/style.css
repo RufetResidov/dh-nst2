@@ -1514,6 +1514,7 @@ p {
     .portfolio-list .portfolio-item.style-1 .portfolio-img-wrapper .portfolio-image {
         display: none !important;
     }
+
     .portfolio-list .portfolio-item.style-1 .portfolio-img-wrapper .portfolio-img-shape {
         display: none !important;
     }
@@ -1530,9 +1531,13 @@ p {
     width: 100%;
     object-fit: cover;
 }
-@media (max-width:1240px) {
-    
-}
-.service-icon i{
+
+@media (max-width:1240px) {}
+
+.service-icon i {
     color: #05152d;
+}
+
+.service-item:hover .service-icon i {
+    color: #FBCB3E;
 }
