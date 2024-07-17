@@ -226,7 +226,7 @@
     <!-- <div class="swiper banner-swiper banner-slider">
       <div class="swiper-slide">
         <div class="swiper-slides">
-          <video class="slider-img" autoplay muted loop id="bg-video">
+          <video class="slider-img" autoplay muted loop id="invisible-video">
             <source src="images/video.mp4" type="video/mp4">
           </video>
           <div class="overlay"></div>
@@ -268,8 +268,11 @@
       </div>
     </div> -->
     <div id="hero">
-      <video class="slider-img" autoplay muted loop id="bg-video">
+      <video class="slider-img" autoplay muted loop>
         <source src="images/video.mp4" type="video/mp4">
+      </video>
+      <video class="slider-img h-0" autoplay muted loop id="invisible-video">
+        <source src="images/2.mp4" type="video/mp4">
       </video>
       <div class="overlay"></div>
       <div class="banner-content">
@@ -1372,9 +1375,7 @@
   <script src="js/theme-script.js"></script>
 
   <script>
-    let elem = document.getElementById("bg-video");
-    
-
+    let elem = document.getElementById("invisible-video");
     function openFullscreen() {
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
@@ -1384,8 +1385,6 @@
         elem.msRequestFullscreen();
       }
     }
-
-    
     </script>
 
   <!-- inject js end -->
