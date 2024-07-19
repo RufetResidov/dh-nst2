@@ -1375,16 +1375,48 @@
   <script src="js/theme-script.js"></script>
 
   <script>
-    let elem = document.getElementById("invisible-video");
+    let video = document.getElementById("invisible-video");
     function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) { /* Safari */
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) { /* IE11 */
+        video.msRequestFullscreen();
       }
+      
     }
+    document.addEventListener("fullscreenchange", function() {
+        if (!document.fullscreenElement) {
+            video.pause();
+        }else{
+          video.play()
+        }
+    });
+
+    document.addEventListener("mozfullscreenchange", function() {
+        if (!document.mozFullScreen) {
+            video.pause();
+        }else{
+          video.play()
+        }
+    });
+
+    document.addEventListener("webkitfullscreenchange", function() {
+        if (!document.webkitIsFullScreen) {
+            video.pause();
+        }else{
+          video.play()
+        }
+    });
+
+    document.addEventListener("msfullscreenchange", function() {
+        if (!document.msFullscreenElement) {
+            video.pause();
+        }else{
+          video.play()
+        }
+    });
     </script>
 
   <!-- inject js end -->
