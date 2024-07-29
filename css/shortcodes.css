@@ -480,7 +480,8 @@
     position: relative;
     overflow: hidden;
 }
-.team-images img{
+
+.team-images img {
     height: 400px;
     object-fit: fill;
 }
@@ -839,7 +840,7 @@
 
 .post-card.style-1 .post-image {
     position: relative;
-    padding-right: 80px;
+    /* padding-right: 80px; */
     margin-top: -50px;
 }
 
@@ -1449,6 +1450,7 @@ blockquote i {
     transform-style: preserve-3d;
     overflow: hidden;
 }
+
 .service-item.style-career {
     background: var(--themeht-white-color);
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.07);
@@ -1461,9 +1463,11 @@ blockquote i {
 .service-item.style-1:hover {
     transform: scale(1.08) translateZ(0);
 }
+
 .service-item.style-career:hover {
     transform: scale(1.08) translateZ(0);
 }
+
 .service-item.style-1 .service-desc {
     position: relative;
     z-index: 9;
@@ -1482,6 +1486,7 @@ blockquote i {
     padding: 12px;
     z-index: 9;
 }
+
 .service-item.service-item.style-career .service-desc {
     position: relative;
     z-index: 9;
@@ -1507,6 +1512,7 @@ blockquote i {
     overflow: hidden;
     -webkit-box-orient: vertical;
 }
+
 .service-item.style-career .service-desc p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1539,12 +1545,14 @@ blockquote i {
     color: var(--themeht-text-color);
     z-index: 9;
 }
+
 .service-item.service-item.style-career .service-icon {
     font-size: 80px;
     line-height: 1;
     color: var(--themeht-text-color);
     z-index: 9;
 }
+
 .service-item.style-career .service-title {
     margin-top: 30px;
 }
@@ -1556,6 +1564,7 @@ blockquote i {
 .service-item.style-1 .service-title h4 {
     margin-bottom: 20px;
 }
+
 .service-item.style-career .service-title h4 {
     margin-bottom: 20px;
 }
@@ -1602,6 +1611,7 @@ blockquote i {
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
+
 .service-item.style-career:hover .service-icon {
     color: var(--themeht-primary-color);
     -webkit-transition: all 10s ease-in-out;
@@ -1610,6 +1620,7 @@ blockquote i {
     -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
+
 .service-item.style-1 .service-title h4 a:hover {
     color: var(--themeht-primary-color);
 }
@@ -1622,11 +1633,13 @@ blockquote i {
     background: transparent;
     color: var(--themeht-white-color);
 }
+
 .service-item.style-career:hover .service-num {
     background: var(--themeht-primary-color);
     top: 15px;
     right: 15px;
 }
+
 .service-item.style-1:hover .service-num {
     background: var(--themeht-primary-color);
     top: 15px;
@@ -2041,7 +2054,7 @@ blockquote i {
 
 .portfolio-item.style-1 h4 {
     line-height: 50px;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .portfolio-item.style-1 {
@@ -2090,8 +2103,8 @@ blockquote i {
 }
 
 .portfolio-name {
-    width: 270px;
-    margin-right: 100px;
+    width: 380px;
+    margin-right: 50px;
 }
 
 .portfolio-item.style-1 .portfolio-image {
@@ -3172,4 +3185,3 @@ input.form-product {
     vertical-align: middle;
     color: var(--themeht-text-color);
 }
-
