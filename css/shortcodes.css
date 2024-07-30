@@ -843,7 +843,10 @@
     /* padding-right: 80px; */
     margin-top: -50px;
 }
-
+.post-card.style-1 .post-image  img{
+    height: 500px;
+    object-fit: cover;
+}
 .post-card.style-1 .post-date {
     position: absolute;
     top: 160px;
